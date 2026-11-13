@@ -1,0 +1,6 @@
+.mirror-tools { position:fixed; z-index:1000; top:max(8px,env(safe-area-inset-top)); left:max(12px,env(safe-area-inset-left)); right:max(12px,env(safe-area-inset-right)); display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px 20px; color:#e9dfcc; background:#05070bb8; border-radius:5px; padding:7px 10px; font:12px/1.6 system-ui,"PingFang SC","Microsoft YaHei",sans-serif; }
+.mirror-tools a { color:#ead2a5; text-decoration:underline; text-underline-offset:3px; }
+.mirror-tools select { color:#e9dfcc; background:#12151b; border:1px solid #948364; border-radius:3px; padding:3px; font:inherit; touch-action:manipulation; }
+body:has(.evs[data-screen="hud"]) .mirror-tools, body:has(.evs[data-screen="none"]) .mirror-tools { display:none; }
+html[lang="zh-CN"] .evs { --serif:"Songti SC","SimSun",serif; --sans:"PingFang SC","Microsoft YaHei",system-ui,sans-serif; font-family:var(--serif); }
+html[lang="zh-CN"] .evs-sub, html[lang="zh-CN"] .evs-name, html[lang="zh-CN"] .evs-boss .nm { font-family:"Songti SC","SimSun",serif; letter-spacing:.08em; }
